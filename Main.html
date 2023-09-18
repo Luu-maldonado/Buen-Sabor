@@ -4,61 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Estilos.css">
+    <link rel="stylesheet" href=".//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Carrito</title>
 </head>
 <body>
-    <div id="header">
-        <div id="main-division">
-            <div id="logo"> <img src="./resources/logo.jpeg" alt=""></div>
-            <div id="menus">
-                <h1 id="titulo">EL BUEN SABOR</h1>
-                <div id="botones">
-                    <button class="menu-button">Menú</button>
+    <body>
+        <div id="header">
+            <div id="main-division">
+                <div id="logo"> <img src="./resources/logo.jpeg" alt=""></div>
+                <div id="menus">
+                    <h1 id="titulo">El Buen Sabor</h1>
+                    <div id="botones">
+                        <button class="menu-button">Menú</button>
+                    </div>
                 </div>
+                <div id="user"><button id="user-button"><img src="./resources/rata ciega.jpg" alt=""></button>Usuario</div>
             </div>
-            <div id="user"><button id="user-button"><img src="./resources/rata ciega.jpg" alt=""></button>Usuario</div>
         </div>
-    </div>
-    <div id="carrito">
-        <hr>
-        <h1 id="titulo">CARRITO DE COMPRAS</h1>
-        <hr>
-    </div>
-    <div id="tabla">
-        <table>
-            <thead><tr>
-                <td><p>nombre prducto</p></td>
-                <td><p>Agregar cantidad</p></td>
-                <td><p>Cantidad</p></td>
-                <td><p>Precio unitario</p></td>
-                <td><p>subTotal</p></td>
-            </tr></thead>
-            <tbody id="tbody">
-            <tr>
-                <td></td>
-                <td><button id="mas">+</button><button id="menos">-</button></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button id="mas">+</button><button id="menos">-</button></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button id="mas">+</button><button id="menos">-</button></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
+    
+        <div id="carrito">
+            <hr>
+            <h2 id="titulo2">Carrito de compras</h2>
+            <hr>
+        </div>
+    
+        <div id="tabla">
+            <table>
+                <thead><tr>
+                    <td width="300px"><p>Nombre producto</p></td>
+                    <td><p>Agregar cantidad</p></td>
+                    <td><p>Cantidad</p></td>
+                    <td><p>Precio unitario</p></td>
+                    <td><p>SubTotal</p></td>
+                </tr></thead>
+                <tbody id="tbody">
+                <tr>
+                    <td></td>
+                    <td><button id="mas">+</button><button id="menos">-</button></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="mas">+</button><button id="menos">-</button></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="mas">+</button><button id="menos">-</button></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
+            <br><br><br><br><br>
+    
+        <div id="total">
+            <p>Total:</p> <div id="valorTotal"></div>
+            <div id="botonesInf">
+                <button id="botonModificar">Modificar pedido</button> <button id="botonConfirmar">Confirmar</button>
+            </div>
+        </div>
+    
+        
 
-    </div>
+        <br><br><br><br><br>
+
+        <div id="footer">
+            <div id="container">
+            <div id="footer-row">
+                <div id="footer-links">
+                    <h4>Integrantes del proyecyo</h4>
+                        <ul>
+                            <li><a href="#">Juan Pablo Neri</a></li>
+                            <li><a href="#">Luciana Maldonado</a></li>
+                            <li><a href="#">Joaco Donadel</a></li>
+                            <li><a href="#">Martin Melonari</a></li>
+                            <li><a href="#">Facundo Lopez</a></li>
+                            <li><a href="#">Franco Gimenez</a></li>
+                            <li><a href="#">Federico Ibañez</a></li>
+                        </ul>
+                </div>
+                <div id="footer-links">
+                    <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Preguntas</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Estatus de orden</a></li>
+                            <li><a href="#">Nuestros servicios</a></li>
+                            <li><a href="#">Pago</a></li>
+                        </ul>
+                </div>
+                <div id="footer-links">
+                    <h4>Tienda</h4>
+                        <ul>
+                            <li><a href="#">Menu del dia</a></li>
+                            <li><a href="#">Promociones</a></li>
+                            <li><a href="#">Descuentos</a></li>
+                            <li><a href="#">Lo mas pedido</a></li>
+                            <li><a href="#">Lo nuevo</a></li>
+                            <li><a href="#">Menu economico</a></li>
+                        </ul>
+                </div>
+                <div id="footer-links">
+                    <h4>Nosotros</h4>
+                        <div>
+                            <img src="./resources/logo.jpeg" alt=""> 
+                            <p>Farcuad</p>
+                        </div>
+                </div>
+
+            </div>
+        </div>
 </body>
 </html>

@@ -9,16 +9,28 @@
     background-color: #E1DFB6;
 }
 
+body{
+    position: relative; /* Establece el cuerpo de la página como posición relativa */
+    padding-bottom: 100px; /* Ajusta el espacio en la parte inferior para dejar espacio para los botones */
+}
+
 img {
     height: 80px;
     border-radius: 50%;
     margin: auto;
     padding: 20px;
 }
+hr{
+    border: 1px solid #5C452D;
+}
 
 #header {
     background-color: #E1DFB6;
 }
+
+#logo img { /*Tamaño del logo*/
+    height: 120px;
+} 
 
 #main-division {
     display: flex;
@@ -79,15 +91,21 @@ img {
 }
 table{
     border-collapse: separate;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto; /* Centra la tabla dentro del contenedor */
 }
-#tbody{
-    border: #5C452D 2px solid;
-    background-color: white;
-}
+
 tr{
     border-collapse:#5C452D 2px solid;
     background-color: white;
+}
 
+#tabla tbody tr td {
+    border-top: 2px solid black; /* Agrega un borde superior a las celdas del tbody */
+    background-color: rgb(211, 211, 211);
+    text-align: center; /* Alinea el contenido de las celdas horizontalmente en el centro */
+    vertical-align: middle; 
 }
 td{
     margin: 15px;
@@ -97,3 +115,167 @@ td{
 #carrito{
     margin-left: 5px;
 }
+
+#mas{
+    background-color: #8CB04E;
+    color: black;
+    border: none;
+    border-top-left-radius: 20px; /* Redondea el borde superior izquierdo */
+    border-bottom-left-radius: 20px; /* Redondea el borde inferior izquierdo */
+    width: 50px; 
+    height: 25px;
+    font-size: 20px;
+}
+#mas:active{
+    background-color: #597032;
+}
+#mas:hover{
+    background-color: #597032;
+    border: 1px solid black;
+}
+
+#menos{
+    background-color: #8CB04E;
+    color: black;
+    border: none;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    width: 50px; 
+    height: 25px;
+    font-size: 20px;
+}
+#menos:active{
+    background-color: #597032;
+}
+#menos:hover{
+    background-color: #597032;
+    border: 1px solid black;
+}
+
+#botonesInf{
+    position: absolute;
+    bottom: 0; /* Coloca los botones en la parte inferior de la página */
+    right: 0; /* Coloca los botones en la parte derecha de la página */
+    padding: 10px; /* Opcional: agrega espacio alrededor de los botones */
+}
+
+#botonModificar{
+    background-color: #8CB04E;
+    color: black;
+    border: none;
+    border-radius: 20px; 
+    width: 180px; 
+    height: 25px;
+    font-size: 15px;
+}
+#botonModificar:active{
+    background-color: #597032; /* Color de fondo cuando se presiona */
+}
+#botonModificar:hover{
+    background-color: #597032;
+    border: 1px solid black;
+}
+
+#botonConfirmar{
+    background-color: #a8a788;
+    color: black;
+    border: none;
+    border-radius: 20px; 
+    width: 130px; 
+    height: 25px;
+    font-size: 15px;
+}
+#botonConfirmar:active{
+    background-color: #5f5f4d; /* Color de fondo cuando se presiona */
+}
+
+#botonConfirmar:hover{
+    background-color: #a8a788;
+    border: 1px solid black;
+}
+#total{
+    width: 160px;
+    height: 50px;
+    border-top: 2px solid black;
+    margin: 0 auto; /* Centra horizontalmente el contenedor en la pantalla */
+    text-align: center; /* Alinea el contenido horizontalmente en el centro */
+    position: absolute; /* Permite usar el centro absoluto */
+    left: 50%; /* Mueve el contenedor hacia la derecha un 50% del ancho de la pantalla */
+    transform: translate(-50%, -50%); /* Corrige el centro absoluto */
+}
+#total p{
+    display: inline-block; /* Hace que el párrafo sea un bloque en línea */
+}
+
+#valorTotal{
+    display: inline-block;
+    background-color: #a8a788;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px; 
+    margin-top: 10px;
+}
+#footer{
+    margin: 0;
+    padding: 80 px 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+#container{
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+}
+#footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#footer-links{
+    width: 25%;
+    padding: 0;
+    align-items: center;
+}
+#footer-links h4{
+    font-size: 15px;
+   margin-bottom: 25px;
+   font-weight: 500;
+   border-bottom: 2px solid #8CB04E;
+   padding-bottom: 10px;
+   display: inline-block;
+}
+#footer-links ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+#footer-links ul li a:hover{
+    color: #8CB04E;
+    padding-left: 6px;
+ }
+ #footer-links p{
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+#footer-links p:hover{
+    color: #8CB04E;
+    padding-left: 6px;
+ }
+ #footer-links img:hover{
+    color: #8CB04E;
+    padding-left: 6px;
+ }
+ @media(max-width:991px){
+    #footer-row{
+        text-align: center;
+    }
+    #footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+ }
