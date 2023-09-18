@@ -1,0 +1,99 @@
+@font-face {
+    font-family: aclonica;
+    src: url(./resources/Aclonica/Aclonica-Regular.ttf);
+}
+
+* {
+    font-family: aclonica;
+    color:#5C452D;
+    background-color: #E1DFB6;
+}
+
+img {
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+#header {
+    background-color: #E1DFB6;
+}
+
+#main-division {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo {
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+#menus div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.menu-button {
+    padding: 10px 15px;
+    flex: 1;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    font-family: aclonica;
+    font-size: 15px;
+    align-self: center;
+    height: 100%;
+}
+
+.menu-button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+}
+#user{
+    text-align: center;
+
+}
+#user-button {
+    background-color:   transparent;
+    border: none;}
+
+#user-button:hover{
+    border: 2px solid black;
+}
+table{
+    border-collapse: separate;
+}
+#tbody{
+    border: #5C452D 2px solid;
+    background-color: white;
+}
+tr{
+    border-collapse:#5C452D 2px solid;
+    background-color: white;
+
+}
+td{
+    margin: 15px;
+    padding: 15px;
+    
+}
+#carrito{
+    margin-left: 5px;
+}
